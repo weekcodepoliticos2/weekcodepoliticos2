@@ -1,5 +1,8 @@
 {
   "name": "myapp",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "bulma": "^0.7.5"
+  },
+  "version": "0.0.0"
 }
