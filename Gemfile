@@ -16,6 +16,11 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 
+# Simple HTTP and REST client for Ruby, inspired by microframework syntax for specifying actions
+gem 'rest-client'
+# The Elo rating system is a method for calculating the relative skill levels of players in two-player games such as chess and Go
+gem 'elo'
+
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
