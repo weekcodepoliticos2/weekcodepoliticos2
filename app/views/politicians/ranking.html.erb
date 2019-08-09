@@ -11,11 +11,11 @@
   </thead>
 
   <tbody>
-    <% @rankings.each do |ranking| %>
+    <% @scores.each do |score| %>
       <tr>
-        <td><%= ranking.politician.name %></td>
-        <td><%= ranking.rating %></td>
-        <td><%= ranking.games_played %></td>
+        <td><%= score.politician.name %></td>
+        <td><%= score.rating %></td>
+        <td><%= score.games_played %></td>
       </tr>
     <% end %>
   </tbody>

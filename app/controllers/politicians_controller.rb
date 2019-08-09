@@ -6,7 +6,7 @@ class PoliticiansController < ApplicationController
   end
 
   def ranking
-    @score = Score.all.order(games_played: :desc)
+    @scores = Score.all.order(games_played: :desc).order(rating: :desc)
   end
 
   def update_ranking
