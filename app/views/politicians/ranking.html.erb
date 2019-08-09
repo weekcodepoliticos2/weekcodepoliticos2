@@ -1,0 +1,24 @@
+<h1>ranking</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Rating</th>
+      <th>Games Played</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @rankings.each do |ranking| %>
+      <tr>
+        <td><%= ranking.politician.name %></td>
+        <td><%= ranking.rating %></td>
+        <td><%= ranking.games_played %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>

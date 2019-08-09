@@ -1,0 +1,4 @@
+<div class="">
+  <p>Vote For: <%= link_to @player_one.name , update_ranking_url(winner: @player_one, loser:@player_two) %></p>
+  <p>Vote For: <%= link_to @player_two.name , update_ranking_url(winner: @player_two, loser:@player_one) %></p>
+</div>
