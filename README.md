@@ -24,12 +24,13 @@ An app to vote and rank politics
 ## Authors
 
 * **Anderson Brandão** - [abrandao](https://github.com/abrandao)
-* **Tobias** - [tiagotobias2003](https://github.com/tiagotobias2003)
+* **Tiago Tobias** - [tiagotobias2003](https://github.com/tiagotobias2003)
 * **Adriano Avelino** - [adrianoavelino](https://github.com/adrianoavelino)
 * **Rafael Prallon** - [RafaelPrallon](https://github.com/rafaelprallon)
 * **Chrystiam Andrade** - [chrystiamweb](https://github.com/chrystiamweb)
-* **Guilherme** - [Guilherme2020](https://github.com/Guilherme2020)
+* **Guilherme Rodrigues** - [Guilherme2020](https://github.com/Guilherme2020)
 * **Lucas Brandão** - [brandaoplaster](https://github.com/brandaoplaster)
+* **Heitor Toledo** - [heitoledo](https://github.com/heitoledo)
 
 ## License
 
