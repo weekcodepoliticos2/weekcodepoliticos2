@@ -2,13 +2,17 @@
 An app to vote and rank politics
 
 ### Prerequisites
-You just need have docker-compose installed in your machine.
+>You just need have docker-compose installed in your machine.
 
 ## Getting Started
-  docker-compose build
-  docker-compose up
-  docker-compose exec web rake db:create
-  docker-compose exec web rake db:migrate
+  ```
+    docker-compose build
+    docker-compose up
+    docker-compose exec web rake db:create
+    docker-compose exec web rake db:migrate
+    docker-compose exec web rake db:seed
+  ```
+  
 
 ## Built With
 * [Ruby on Rails](https://rubyonrails.org/) - Dependency Management
@@ -19,7 +23,7 @@ You just need have docker-compose installed in your machine.
   * **Tobias** - [tiagotobias2003](https://github.com/tiagotobias2003)
   * **Adriano Avelino** - [adrianoavelino](https://github.com/adrianoavelino)
   * **Rafael Prallon** - [RafaelPrallon](https://github.com/rafaelprallon)
-  * **Chrystian** - [chrystiamweb](https://github.com/chrystiamweb)
+  * **Chrystiam Andrade** - [chrystiamweb](https://github.com/chrystiamweb)
   * **Guilherme** - [Guilherme2020](https://github.com/Guilherme2020)
   * **Lucas Brandão** - [brandaoplaster](https://github.com/brandaoplaster)
 
