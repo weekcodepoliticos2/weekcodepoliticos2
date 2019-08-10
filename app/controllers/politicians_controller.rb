@@ -1,19 +1,22 @@
 class PoliticiansController < ApplicationController
 
   def index
-    @player_one = Politician.find(rand(1..Politician.count))
-    @player_two = Politician.where.not(id: @player_one.id).sample
   end
 
   def ranking
     @scores = Score.all.order(games_played: :desc).order(rating: :desc)
   end
 
+  def comparison
+    @player_one = Politician.find(rand(1..Politician.count))
+    @player_two = Politician.where.not(id: @player_one.id).sample
+  end
+
   def update_ranking
     winner = set_player(params[:winner])
     loser = set_player(params[:loser])
     GameService.new.run_game(winner, loser)
-    redirect_to root_url
+    redirect_to comparison_path
   end
 
   private

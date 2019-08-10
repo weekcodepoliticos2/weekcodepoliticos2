@@ -3,47 +3,56 @@
     <div class="container has-text-centered">
       <h1 class="title">Which one do you like?</h1>
       <div class="columns is-desktop is-mobile">
+
         <div class="column">
           <div class="box">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-4by3 blurred">
-                  <%= image_tag '/imagens/politicians/senador5533.jpg', class: 'image is-128x128'%>
-                  <h2 class="title">Paulo Paim</h2>
-                  <h3 class="subtitle">Senadore - PT/RS</h3>
-                </figure>
+            <a href="/update_ranking?loser=<%= @player_two.id %>&winner=<%= @player_one.id %>">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3 blurred">
+                    <%= image_tag '/imagens/politicians/senador5533.jpg', class: 'image is-128x128'%>
+                    <h2 class="title"><%= @player_one.name %></h2>
+                    <h3 class="subtitle">
+                      <%= @player_one.party %>/<%= @player_one.state %>
+                    </h3>
+                  </figure>
+                </div>
+                <footer class="card-footer">
+                  <a class="card-footer-item">
+                    <span class="icon is-medium is-left">
+                       <i class="fa fa-heart" aria-hidden="true"></i>
+                    </span>
+                    Like
+                  </a>
+                </footer>
               </div>
-              <footer class="card-footer">
-                <a class="card-footer-item">
-                  <span class="icon is-medium is-left">
-                     <i class="fa fa-heart" aria-hidden="true"></i>
-                  </span>
-                  Like
-                </a>
-              </footer>
-            </div>
+          </a>
           </div>
         </div>
+
         <div class="column">
           <div class="box">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-4by3 blurred">
-                  <%= image_tag '/imagens/politicians/senador3396.jpg', class: 'image is-128x128'%>
-                  <h2 class="title is-4">Paulo Paim</h2>
-                  <h3 class="subtitle is-5">Senadore - PT/RS</h3>
-                </figure>
+            <a href="/update_ranking?loser=<%= @player_one.id %>&winner=<%= @player_two.id %>">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3 blurred">
+                    <%= image_tag '/imagens/politicians/senador3396.jpg', class: 'image is-128x128'%>
+                    <h2 class="title"><%= @player_two.name %></h2>
+                    <h3 class="subtitle">
+                      <%= @player_two.party %>/<%= @player_two.state %>
+                    </h3>
+                  </figure>
+                </div>
+                <footer class="card-footer">
+                  <a class="card-footer-item">
+                    <span class="icon is-medium is-left">
+                       <i class="fa fa-heart" aria-hidden="true"></i>
+                    </span>
+                    Like
+                  </a>
+                </footer>
               </div>
-              <footer class="card-footer">
-
-                <a class="card-footer-item">
-                  <span class="icon is-medium is-left">
-                     <i class="fa fa-heart" aria-hidden="true"></i>
-                  </span>
-                  Like
-                </a>
-              </footer>
-            </div>
+            </a>
           </div>
         </div>
       </div>

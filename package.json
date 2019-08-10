@@ -2,7 +2,8 @@
   "name": "myapp",
   "private": true,
   "dependencies": {
-    "bulma": "^0.7.5"
+    "bulma": "^0.7.5",
+    "@fortawesome/fontawesome-free": "^5.8.1"
   },
   "version": "0.0.0"
 }
