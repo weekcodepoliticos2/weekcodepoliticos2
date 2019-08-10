@@ -4,7 +4,7 @@ class PoliticiansController < ApplicationController
   end
 
   def ranking
-    @scores = Score.all.order(rating: :desc)
+    @scores = Score.all.order(rating: :desc).page(params[:page])
   end
 
   def comparison
