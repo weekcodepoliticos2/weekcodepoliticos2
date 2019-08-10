@@ -1,11 +1,9 @@
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item" href="#">
-      <figure class="media-right image is-32x32">
-        <%= image_tag '/imagens/logo.png', class: 'image is-32x32'%>
-      </figure>
-    </a>
-
+    <%= link_to("/", class: "navbar-item") do %>
+      <%= image_tag('/imagens/logo.png', class: 'image is-32x32') %>
+    <% end %>
+    
     <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
        data-target="navbarBasicExample">
       <span aria-hidden="true"></span>
