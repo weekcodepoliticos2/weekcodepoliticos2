@@ -1,0 +1,39 @@
+.blurred {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+  transition: .3s;
+  margin: 1px;
+}
+
+.blurred img {
+  width: 100%;
+  height: 100%;
+  transition: .3s;
+  border-radius: 4px;
+}
+
+.blurred:hover img {
+  filter: blur(2px) brightness(75%);
+  /*box-shadow: 0 0 16px cyan;*/
+}
+
+.blurred :not(img) {
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  transition: .3s;
+}
+
+.blurred h3 {
+  top: 70%;
+}
+
+.blurred:hover :not(img) {
+  opacity: 1;
+}

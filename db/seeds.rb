@@ -1,7 +1,18 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+get_data = RestClient.get('https://dadosabertos.camara.leg.br/api/v2/deputados?')
+
+data = JSON.parse(get_data)
+
+data["dados"].each_with_index do |politician,i|
+  Politician.create!(
+    api_id: politician["id"],
+    name:   politician["nome"],
+    party:  politician["siglaPartido"],
+    state:  politician["siglaUf"]
+  )
+  
+  Score.create!(
+    politician_id: (i+1),
+    rating: 1000,
+    games_played: 0
+  )
+end
