@@ -6,4 +6,7 @@ class PoliticiansController < ApplicationController
   def ranking
   end
 
+  def comparison
+  end
+
 end
