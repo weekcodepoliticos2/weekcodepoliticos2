@@ -5,6 +5,32 @@
         <div class="tile is-parent is-vertical">
           <article class="tile is-child notification is-link">
             <p class="title is-4">Ranking dos Politicos</p>
+            <% @scores.each_with_index do |score, index| %>
+              <div class="box">
+                <article class="media">
+                  <div class="media-left">
+                    <span class="tag is-success is-medium"><%= index + 1 %></span>
+                  </div>
+                  <div class="media-right media-left">
+                    <figure class="image is-128x128">
+                      <%= image_tag '/imagens/politicians/senador3396.jpg', class: 'image is-128x128'%>
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="content">
+
+                      <p>
+                        <strong><%= score.politician.name %> </strong>
+                        <br>
+                        <%= score.politician.party %>/<%= score.politician.state %>
+                        <br>
+                        <%= score.rating %> points
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            <% end %>
             <div class="box">
               <article class="media">
                 <div class="media-left">
@@ -26,6 +52,8 @@
                 </div>
               </article>
             </div>
+
+
             <div class="box">
               <article class="media">
                 <div class="media-left is-paddingless-top">
