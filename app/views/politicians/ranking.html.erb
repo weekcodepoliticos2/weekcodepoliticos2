@@ -31,74 +31,12 @@
                 </article>
               </div>
             <% end %>
-            <div class="box">
-              <article class="media">
-                <div class="media-left">
-                  <span class="tag is-success is-medium">1</span>
-                </div>
-                <div class="media-right media-left">
-                  <figure class="image is-128x128">
-                    <%= image_tag '/imagens/politicians/senador3396.jpg', class: 'image is-128x128'%>
-                  </figure>
-                </div>
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <strong>Paulo Paim</strong>
-                      <br>
-                      Senadore - PT/RS
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </div>
-
-
-            <div class="box">
-              <article class="media">
-                <div class="media-left is-paddingless-top">
-                  <span class="tag is-primary is-medium">2</span>
-                </div>
-                <div class="media-right media-left">
-                  <figure class="image is-128x128">
-                    <%= image_tag '/imagens/politicians/senador5533.jpg', class: 'image is-128x128'%>
-                  </figure>
-                </div>
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <strong>John Smith</strong>
-                      <br>
-                      Senadore - PT/RS
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="box">
-              <article class="media">
-                <div class="media-left">
-                  <span class="tag is-primary is-medium">3</span>
-                </div>
-                <div class="media-right media-left">
-                  <figure class="image is-128x128">
-                    <%= image_tag '/imagens/politicians/senador5929.jpg', class: 'image is-128x128'%>
-                  </figure>
-                </div>
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <strong>John Smith</strong>
-                      <br>
-                      Senadore - PT/RS
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </div>
           </article>
         </div>
       </div>
     </div>
   </div>
 </section>
+<div class="container">
+  <%= paginate @scores %>
+</div>
