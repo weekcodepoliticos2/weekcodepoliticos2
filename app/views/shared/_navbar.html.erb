@@ -2,7 +2,7 @@
   <div class="navbar-brand">
     <a class="navbar-item" href="#">
       <figure class="media-right image is-32x32">
-        <img src="image/logo.png" class="image is-32x32">
+        <%= image_tag '/imagens/logo.png', class: 'image is-32x32'%>
       </figure>
     </a>
 
@@ -16,13 +16,8 @@
 
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
-      <a class="navbar-item">
-        Comparation
-      </a>
-
-      <a class="navbar-item">
-        Ranking
-      </a>
+      <%= link_to "Comparation", 'comparison', class: 'navbar-item'%>
+      <%= link_to "Ranking", 'ranking', class: 'navbar-item' %>
     </div>
   </div>
 </nav>
