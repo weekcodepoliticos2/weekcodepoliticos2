@@ -10,9 +10,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2019_08_09_154118) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "politicians", force: :cascade do |t|
+    t.integer "api_id"
+    t.string "name"
+    t.string "party"
+    t.string "state"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "scores", force: :cascade do |t|
+    t.bigint "politician_id"
+    t.integer "rating"
+    t.integer "games_played"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["politician_id"], name: "index_scores_on_politician_id"
+  end
+
+  add_foreign_key "scores", "politicians"
 end
