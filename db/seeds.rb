@@ -7,7 +7,8 @@ data["dados"].each_with_index do |politician,i|
     api_id: politician["id"],
     name:   politician["nome"],
     party:  politician["siglaPartido"],
-    state:  politician["siglaUf"]
+    state:  politician["siglaUf"],
+    photo: politician["urlFoto"]
   )
   
   Score.create!(
