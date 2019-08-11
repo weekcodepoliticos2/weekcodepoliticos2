@@ -9,7 +9,7 @@
               <div class="box">
                 <article class="media">
                   <div class="media-left">
-                    <span class="tag is-success is-medium"><%= index + 1 %></span>
+                    <span class="tag is-success is-medium"><%= get_ordinal_rating(params['page'].to_i, index) %> </span>
                   </div>
                   <div class="media-right media-left">
                     <figure class="image is-128x128">
