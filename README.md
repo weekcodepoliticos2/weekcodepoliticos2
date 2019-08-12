@@ -14,6 +14,7 @@ An app to vote and rank politics
     docker-compose exec web rake db:create
     docker-compose exec web rake db:migrate
     docker-compose exec web rake db:seed
+    docker-compose exec web yarn install
   ```
 
 ## Built With
