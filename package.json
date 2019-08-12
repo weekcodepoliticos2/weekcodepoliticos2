@@ -2,8 +2,9 @@
   "name": "myapp",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.8.1",
     "bulma": "^0.7.5",
-    "@fortawesome/fontawesome-free": "^5.8.1"
+    "jquery": "^3.4.1"
   },
   "version": "0.0.0"
 }
