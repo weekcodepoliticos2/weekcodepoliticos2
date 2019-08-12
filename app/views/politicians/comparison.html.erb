@@ -2,7 +2,7 @@
   <div class="hero-body">
     <div class="container has-text-centered">
       <h1 class="title">Which one do you like?</h1>
-      <div class="columns is-desktop is-mobile">
+      <div class="columns is-mobile">
 
         <div class="column">
           <div class="box">
@@ -13,9 +13,9 @@
                     <%= image_tag @player_one.photo, class: 'image is-128x128'%>
                     <h2 class="title"><%= @player_one.name %></h2>
                     <h3 class="subtitle">
-                      <%= @player_one.party %>/<%= @player_one.state %>                   
+                      <%= @player_one.party %>/<%= @player_one.state %>
                     </h3>
-                  </figure>                  
+                  </figure>
                 </div>
                 <footer class="card-footer">
                   <a class="card-footer-item">
@@ -25,8 +25,12 @@
                     Like
                   </a>
                 </footer>
+                  <h2 class="title has-text-black is-uppercase font-fix"><%= @player_one.name %></h2>
+                  <h3 class="subtitle has-text-black is-uppercase font-fix">
+                    <%= @player_one.party %>/<%= @player_one.state %>
+                  </h3>
               </div>
-          </a>
+            </a>
           </div>
         </div>
 
@@ -51,6 +55,10 @@
                     Like
                   </a>
                 </footer>
+                <h2 class="title has-text-black is-uppercase font-fix"><%= @player_two.name %></h2>
+                  <h3 class="subtitle has-text-black is-uppercase font-fix">
+                    <%= @player_two.party %>/<%= @player_two.state %>
+                  </h3>
               </div>
             </a>
           </div>

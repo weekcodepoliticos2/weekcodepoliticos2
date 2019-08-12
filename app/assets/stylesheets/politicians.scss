@@ -37,3 +37,15 @@
 .blurred:hover :not(img) {
   opacity: 1;
 }
+
+
+
+@media (max-width: 1024px) and (orientation: portrait) {
+  
+  .font-fix{ 
+    font-size: 0.9rem; 
+    padding: 0;
+    margin: 0;
+  }
+  
+}
