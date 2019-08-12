@@ -1,20 +1,21 @@
 # WeekCode Políticos 2
 
-An app to vote and rank politics
+An app to vote and rank brasilian politicians
 
 ## Prerequisites
 
 >You just need have docker-compose installed in your machine.
 
 ## Getting Started
+>To get the app running, run the following commands:
 
   ```docker
     docker-compose build
     docker-compose up
-    docker-compose exec web rake db:create
-    docker-compose exec web rake db:migrate
-    docker-compose exec web rake db:seed
     docker-compose exec web yarn install
+    docker-compose exec web rails db:create
+    docker-compose exec web rails db:migrate
+    docker-compose exec web rails db:seed
   ```
 
 ## Built With
